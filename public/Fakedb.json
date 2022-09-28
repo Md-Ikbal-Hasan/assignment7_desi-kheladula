@@ -3,15 +3,15 @@
         "id": 1,
         "name": "GollaChut",
         "image": "https://thedhakatimes.com/wp-content/uploads/2014/09/village-Cipher-run-Game-600x394.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus, fugiat tempore ratione commodi necessitatibus laborum eveniet incidunt ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus,",
         "age": "7-15",
         "time": "30"
     },
     {
         "id": 2,
-        "name": "Kanmachi",
+        "name": "Kanamachi",
         "image": "https://upload.wikimedia.org/wikipedia/bn/5/53/%E0%A6%95%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%9B%E0%A6%BF.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus, fugiat tempore ratione commodi necessitatibus laborum eveniet incidunt ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus, ",
         "age": "5-15",
         "time": "20"
     },
@@ -19,8 +19,56 @@
         "id": 3,
         "name": "Dariabanda",
         "image": "https://www.ipcsbdpress.com/wp-content/uploads/2020/10/20201003_165701.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus, fugiat tempore ratione commodi necessitatibus laborum eveniet incidunt ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus,",
         "age": "7-18",
         "time": "40"
+    },
+    {
+        "id": 4,
+        "name": "Cricket",
+        "image": "https://i.ytimg.com/vi/f4uIMxB7mO0/maxresdefault.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus,",
+        "age": "7-40",
+        "time": "120"
+    },
+    {
+        "id": 5,
+        "name": "Football",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQSmCYswMxfFXwP6KMVsMYaQ9-O-JauNHjdg&usqp=CAU",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus, ",
+        "age": "5-15",
+        "time": "90"
+    },
+    {
+        "id": 6,
+        "name": "Push Up",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_MpV3k459xyGP9XoyOwT7G-vX3xT_Y8KLew&usqp=CAU",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus,",
+        "age": "12-45",
+        "time": "10"
+    },
+    {
+        "id": 7,
+        "name": "Ludu",
+        "image": "http://4.bp.blogspot.com/-vJJe_8H0L9c/VDWE5efwQ2I/AAAAAAAAK8Q/3py3bvhOhuc/s1600/ludu%2Bkhela.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus,",
+        "age": "7-70",
+        "time": "50"
+    },
+    {
+        "id": 8,
+        "name": "Flip a coin",
+        "image": "https://miro.medium.com/max/425/1*UdFt2qWrJx8hN2O0fcAl_g.jpeg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus, ",
+        "age": "5-70",
+        "time": "1"
+    },
+    {
+        "id": 9,
+        "name": "One song workout",
+        "image": "https://img.livestrong.com/640/clsd/getty/a9b3273112264b68bf6554ed698feee5.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus perspiciatis accusamus,",
+        "age": "7-40",
+        "time": "5"
     }
 ]

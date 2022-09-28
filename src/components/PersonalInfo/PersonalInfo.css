@@ -1,0 +1,35 @@
+.user {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.user-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-information {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 7px 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.user-information h4 {
+    margin: 0;
+}
+
+.user-information h4 span {
+    font-size: 14px;
+    margin: 0;
+}
+
+.user-information p {
+    margin-top: 3px;
+}

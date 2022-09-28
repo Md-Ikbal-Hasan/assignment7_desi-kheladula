@@ -1,17 +1,17 @@
 import React from 'react';
 import './Sport.css'
-const Sport = ({ sport }) => {
+const Sport = ({ sport, handleExerciseTime }) => {
     const { id, name, image, description, age, time } = sport
 
-    console.log(sport);
+    // console.log(sport);
     return (
         <div className='sport-card'>
             <img className='card-image' src={image} alt="" />
-            <h4>{name}</h4>
+            <h4 className='title'>{name}</h4>
             <p> {description} </p>
-            <p>For age: {age} </p>
-            <p>Time required: {time}</p>
-            <button>Add to list</button>
+            <p className='age'>For age: <b>{age}</b> </p>
+            <p className='time'>Time required: <b>{time} minutes</b> </p>
+            <button onClick={() => handleExerciseTime(parseInt(time))} className='card-btn'>Add to list</button>
 
         </div>
     );

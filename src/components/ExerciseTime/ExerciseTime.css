@@ -1,0 +1,13 @@
+.exercise-section {
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.exercise-time {
+    font-weight: bold;
+}

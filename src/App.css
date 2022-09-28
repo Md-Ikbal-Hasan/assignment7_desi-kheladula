@@ -30,6 +30,5 @@
 
 .right-side {
   border: 1px solid red;
-
-  box-shadow: 2px 2px 4px white;
+  padding: 20px;
 }
