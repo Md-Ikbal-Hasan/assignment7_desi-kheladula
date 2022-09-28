@@ -1,0 +1,10 @@
+.sport-card {
+    border: 1px solid purple;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.card-image {
+    width: 100%;
+}

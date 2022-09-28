@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import './App.css';
+import Sport from './components/Sport/Sport';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
       .then(data => setSports(data));
   }, [])
 
-  console.log(sports);
+  // console.log(sports);
 
 
   return (
@@ -22,6 +23,11 @@ function App() {
 
         <div>
           <h1 className='club-title'>Desi Traditional Sports Club</h1>
+          <div className='card-container'>
+            {
+              sports.map(sport => <Sport sport={sport} key={sport.id}></Sport>)
+            }
+          </div>
         </div>
 
 

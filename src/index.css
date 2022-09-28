@@ -3,6 +3,8 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  border: 10px solid blue;
+  background-color: cyan;
 }
 
 code {
