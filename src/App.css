@@ -2,8 +2,29 @@
   text-align: center;
 }
 
-.container {
+.main-container {
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  border: 2px solid red;
+  grid-template-columns: 6fr 2fr;
+
+}
+
+
+
+.left-side {
+  border: 1px solid blue;
+  padding: 30px;
+
+}
+
+.club-title {
+  font-size: 30px;
+  color: green;
+  font-weight: 600;
+  margin: 50px 0;
+}
+
+.right-side {
+  border: 1px solid red;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 4px white;
 }
