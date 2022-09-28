@@ -7,7 +7,7 @@ const Sport = ({ sport, handleExerciseTime }) => {
     return (
         <div className='sport-card'>
             <img className='card-image' src={image} alt="" />
-            <h4 className='title'>{name}</h4>
+            <h4 className='sport-name'>{name}</h4>
             <p> {description} </p>
             <p className='age'>For age: <b>{age}</b> </p>
             <p className='time'>Time required: <b>{time} minutes</b> </p>

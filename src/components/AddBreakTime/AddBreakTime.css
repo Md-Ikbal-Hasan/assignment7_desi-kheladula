@@ -1,0 +1,25 @@
+.time-container {
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
+.time-break {
+    padding: 7px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border: none;
+    margin-right: 3px;
+
+}

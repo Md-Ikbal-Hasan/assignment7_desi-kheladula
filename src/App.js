@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import './App.css';
+import AddBreakTime from './components/AddBreakTime/AddBreakTime';
+import BreakTime from './components/BreakTime/BreakTime';
+
 import ExerciseTime from './components/ExerciseTime/ExerciseTime';
 import PersonalInfo from './components/PersonalInfo/PersonalInfo';
 import Sport from './components/Sport/Sport';
@@ -8,10 +11,11 @@ import Sport from './components/Sport/Sport';
 function App() {
 
   const [sports, setSports] = useState([]);
-  const [exerciseTime, setExerciseTime] = useState(0)
+  const [exerciseTime, setExerciseTime] = useState(0);
+  const [breakTime, setBreakTime] = useState(0);
 
   useEffect(() => {
-    fetch('fakedb.json')
+    fetch('data.json')
       .then(res => res.json())
       .then(data => setSports(data));
   }, [])
@@ -22,12 +26,19 @@ function App() {
     setExerciseTime(newExerciseTime);
   }
 
+  const addBreakTimeToDb = (breakTime) => {
+
+    localStorage.setItem('breaktime-db', breakTime);
+    const updateBreakTime = localStorage.getItem('breaktime-db');
+    setBreakTime(updateBreakTime);
+
+  }
+
 
   return (
     <div className='main-container'>
 
       <div className='left-side'>
-
         <div>
           <h1 className='club-title'>Desi Traditional Sports Club</h1>
           <h4 style={{ "margin": "25px 0" }}>Select today's exercise</h4>
@@ -43,20 +54,20 @@ function App() {
           </div>
         </div>
 
-
-
       </div>
 
 
-
-
-
       <div className='right-side'>
-
         <PersonalInfo></PersonalInfo>
+
+        <h4 style={{ "marginTop": "40px", "marginBottom": "15px" }}>Add A Break</h4>
+        <AddBreakTime addBreakTimeToDb={addBreakTimeToDb}></AddBreakTime>
+
 
         <h4 style={{ "marginTop": "40px", "marginBottom": "15px" }}>Exercise Details</h4>
         <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
+        <BreakTime breakTime={breakTime} ></BreakTime>
+
 
 
 

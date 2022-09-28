@@ -1,0 +1,10 @@
+.break-time-section {
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
