@@ -29,11 +29,21 @@
 
 .right-side {
   padding: 20px;
+  background-color: blanchedalmond;
 }
 
+.toast-btn {
 
+  padding: 7px 10px;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
 
-
+}
 
 
 @media only screen and (max-width: 850px) {

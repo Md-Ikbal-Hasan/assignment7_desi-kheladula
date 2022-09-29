@@ -8,6 +8,10 @@ import ExerciseTime from './components/ExerciseTime/ExerciseTime';
 import PersonalInfo from './components/PersonalInfo/PersonalInfo';
 import Sport from './components/Sport/Sport';
 
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 
   const [sports, setSports] = useState([]);
@@ -33,6 +37,8 @@ function App() {
     setBreakTime(updateBreakTime);
 
   }
+
+  const notify = () => toast("Wow. Assignment Completed Successfully! !");
 
 
   return (
@@ -67,6 +73,13 @@ function App() {
         <h4 style={{ "marginTop": "40px", "marginBottom": "15px" }}>Exercise Details</h4>
         <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
         <BreakTime breakTime={breakTime} ></BreakTime>
+
+        <div>
+          <button className='toast-btn' onClick={notify}>Activity Completed</button>
+          <ToastContainer />
+        </div>
+
+
 
 
 
