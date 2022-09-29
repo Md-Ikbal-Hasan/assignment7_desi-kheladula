@@ -1,5 +1,7 @@
 import React from 'react';
 import './PersonalInfo.css'
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 const PersonalInfo = () => {
     return (
         <div>
@@ -7,7 +9,7 @@ const PersonalInfo = () => {
                 <img className='user-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREpLfVN1SDgl_Man8aza4DI57-2r-qnFCAXsboXMhcEQEXvfUBkue1tw4Q3hlyvQAhl9A&usqp=CAU" alt="" />
                 <div>
                     <h5 style={{ "margin": '0px' }}>Mr Alex</h5>
-                    <small>Dhaka, Bangladesh</small>
+                    <small> <FaMapMarkerAlt /> Dhaka, Bangladesh</small>
                 </div>
             </div>
             <div className='user-information'>

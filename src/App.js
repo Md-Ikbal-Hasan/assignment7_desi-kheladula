@@ -11,6 +11,7 @@ import Sport from './components/Sport/Sport';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import QueAndAns from './components/QueAndAns/QueAndAns';
 
 function App() {
 
@@ -58,7 +59,10 @@ function App() {
               ></Sport>)
             }
           </div>
+
+
         </div>
+        <QueAndAns></QueAndAns>
 
       </div>
 
@@ -80,11 +84,9 @@ function App() {
         </div>
 
 
-
-
-
-
       </div>
+
+
 
     </div>
   );
