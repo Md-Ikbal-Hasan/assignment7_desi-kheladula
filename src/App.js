@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect, useState } from 'react';
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import { useEffect, useState } from 'react';
+
 import AddBreakTime from './components/AddBreakTime/AddBreakTime';
 import BreakTime from './components/BreakTime/BreakTime';
 
@@ -8,10 +11,8 @@ import ExerciseTime from './components/ExerciseTime/ExerciseTime';
 import PersonalInfo from './components/PersonalInfo/PersonalInfo';
 import Sport from './components/Sport/Sport';
 
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import QueAndAns from './components/QueAndAns/QueAndAns';
+
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
   const [exerciseTime, setExerciseTime] = useState(0);
   const [breakTime, setBreakTime] = useState(0);
 
+  // loading the data from data.json
   useEffect(() => {
     fetch('data.json')
       .then(res => res.json())
@@ -26,20 +28,21 @@ function App() {
   }, [])
 
 
+  // take the exercise time and set to state
   const handleExerciseTime = (time) => {
     const newExerciseTime = exerciseTime + time;
     setExerciseTime(newExerciseTime);
   }
 
+  // add break time and save to local storage 
   const addBreakTimeToDb = (breakTime) => {
-
     localStorage.setItem('breaktime-db', breakTime);
     const updateBreakTime = localStorage.getItem('breaktime-db');
     setBreakTime(updateBreakTime);
-
   }
 
-  const notify = () => toast("Wow. Assignment Completed Successfully! !");
+  // react toastify notification 
+  const notify = () => toast("Wow. Todays Activity Completed Successfully! !");
 
 
   return (
@@ -60,21 +63,15 @@ function App() {
             }
           </div>
 
+          <QueAndAns></QueAndAns>
 
         </div>
-        <QueAndAns></QueAndAns>
-
       </div>
 
 
       <div className='right-side'>
         <PersonalInfo></PersonalInfo>
-
-        <h4 style={{ "marginTop": "40px", "marginBottom": "15px" }}>Add A Break</h4>
         <AddBreakTime addBreakTimeToDb={addBreakTimeToDb}></AddBreakTime>
-
-
-        <h4 style={{ "marginTop": "40px", "marginBottom": "15px" }}>Exercise Details</h4>
         <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
         <BreakTime breakTime={breakTime} ></BreakTime>
 
@@ -82,11 +79,7 @@ function App() {
           <button className='toast-btn' onClick={notify}>Activity Completed</button>
           <ToastContainer />
         </div>
-
-
       </div>
-
-
 
     </div>
   );
